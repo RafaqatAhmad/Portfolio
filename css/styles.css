@@ -1,0 +1,155 @@
+/* Reset and general styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #e8491d;
+}
+
+/* Section styles */
+.section {
+    padding: 60px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Project, Experience, and Education styles */
+.project, .experience, .education {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin-top: 0;
+}
+
+/* Skills styles */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.skills-list li i {
+    margin-right: 5px;
+}
+
+.skills-list li:hover {
+    background: #333;
+}
+
+/* Contact info styles */
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #e8491d;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #333;
+}
+
+/* Footer styles */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .container {
+        width: 95%;
+    }
+}
